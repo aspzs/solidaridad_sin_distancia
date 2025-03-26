@@ -1,0 +1,196 @@
+/* Mejoras específicas para la página de Registros */
+
+/* Estilos de fondo y cabecera */
+.min-h-screen.pt-16.pb-10.bg-gray-50 {
+    background-color: #f1f5f9 !important; /* Azul muy claro para el fondo */
+  }
+  
+  /* Cabecera mejorada */
+  .bg-gradient-to-r.from-blue-800.to-blue-600 {
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6) !important;
+    border-radius: 0 0 0.5rem 0.5rem !important;
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.2) !important;
+  }
+  
+  /* Formulario de registro mejorado */
+  .bg-white.rounded-xl.shadow-lg {
+    border-radius: 1rem !important;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid #e2e8f0 !important;
+    overflow: hidden !important;
+  }
+  
+  /* Encabezado del formulario */
+  .bg-white.rounded-xl.shadow-lg .bg-gradient-to-r {
+    padding: 1.5rem !important;
+  }
+  
+  /* Contenido del formulario */
+  .bg-white.rounded-xl.shadow-lg .p-6 {
+    padding: 2rem !important;
+    background-color: white !important;
+  }
+  
+  /* Tabla de registros mejorada */
+  .table-container, .overflow-x-auto {
+    border-radius: 1rem !important;
+    background-color: white !important;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid #e2e8f0 !important;
+    overflow: hidden !important;
+  }
+  
+  /* Cabecera de tabla */
+  .bg-gray-50 {
+    background-color: #f8fafc !important;
+  }
+  
+  /* Filtros mejorados */
+  .px-6.py-4.bg-gray-50.border-b {
+    background: linear-gradient(to bottom, #ffffff, #f8fafc) !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+    padding: 1rem 1.5rem !important;
+  }
+  
+  /* Inputs mejorados */
+  input[type="text"], input[type="email"], input[type="password"], input[type="search"], select {
+    border: 1px solid #d1d5db !important;
+    border-radius: 0.5rem !important;
+    padding: 0.75rem 1rem !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+    background-color: white !important;
+  }
+  
+  input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="search"]:focus, select:focus {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2) !important;
+    outline: none !important;
+  }
+  
+  /* Botones mejorados */
+  button.px-4.py-2.border {
+    border: 1px solid #d1d5db !important;
+    background-color: white !important;
+    border-radius: 0.5rem !important;
+    color: #4b5563 !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+  }
+  
+  button.px-4.py-2.border:hover {
+    background-color: #f9fafb !important;
+    border-color: #9ca3af !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+  }
+  
+  /* Filas de la tabla */
+  tr {
+    border-bottom: 1px solid #e5e7eb !important;
+  }
+  
+  tr:last-child {
+    border-bottom: none !important;
+  }
+  
+  tr:hover {
+    background-color: #f9fafb !important;
+  }
+  
+  /* Encabezados de tabla */
+  th {
+    background-color: #f1f5f9 !important;
+    color: #1f2937 !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    font-size: 0.75rem !important;
+    letter-spacing: 0.05em !important;
+    padding: 0.75rem 1rem !important;
+    border-bottom: 2px solid #e5e7eb !important;
+  }
+  
+  /* Celdas de tabla */
+  td {
+    padding: 1rem !important;
+    color: #374151 !important;
+    border-bottom: 1px solid #e5e7eb !important;
+  }
+  
+  /* Etiquetas de nacionalidad */
+  td span.px-3.py-1 {
+    background-color: #dbeafe !important;
+    color: #1e40af !important;
+    border-radius: 9999px !important;
+    padding: 0.25rem 0.75rem !important;
+    font-size: 0.75rem !important;
+    font-weight: 600 !important;
+  }
+  
+  /* Pie de la tabla */
+  .px-6.py-4.bg-gray-50.border-t {
+    background-color: #f8fafc !important;
+    border-top: 1px solid #e2e8f0 !important;
+    color: #6b7280 !important;
+    padding: 1rem 1.5rem !important;
+  }
+  
+  /* Mensaje de no resultados */
+  .text-center.py-16.px-6 {
+    padding: 4rem 1.5rem !important;
+    color: #6b7280 !important;
+  }
+  
+  .text-center.py-16.px-6 svg {
+    margin: 0 auto 1rem !important;
+    width: 4rem !important;
+    height: 4rem !important;
+    color: #d1d5db !important;
+  }
+  
+  /* Spinner de carga */
+  .animate-spin {
+    animation: spin 1s linear infinite !important;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Texto de carga */
+  .text-gray-600.text-lg.font-medium {
+    color: #4b5563 !important;
+    margin-top: 1rem !important;
+  }
+  
+  /* Mejoras para los mensajes de alerta */
+  div[class*="bg-green-50"], div[class*="bg-red-50"] {
+    padding: 1rem !important;
+    border-radius: 0.5rem !important;
+    margin-bottom: 1.5rem !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+  
+  div[class*="bg-green-50"] {
+    background-color: #ecfdf5 !important;
+    border-left: 4px solid #10b981 !important;
+  }
+  
+  div[class*="bg-red-50"] {
+    background-color: #fef2f2 !important;
+    border-left: 4px solid #ef4444 !important;
+  }
+  
+  div[class*="bg-green-50"] svg, div[class*="bg-red-50"] svg {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+    margin-right: 0.75rem !important;
+  }
+  
+  div[class*="bg-green-50"] span, div[class*="bg-red-50"] span {
+    color: #374151 !important;
+    font-weight: 500 !important;
+  }
